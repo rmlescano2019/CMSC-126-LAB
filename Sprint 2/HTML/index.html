@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Renmar Lescano | Pseudo-Personal Website</title>
+
+        <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel = "stylesheet" type = "text/css" href = "css/style2.css">
+    </head>
+
+    <body>
+        <!-- Header -->
+        <header id = "header" class = "vh-100 flex">
+            <div class = "container">
+                <div class = "header-content">
+                    <h1>I'm a<br><span class = "typewrite" data-loop = "yes" data-speed = "100" data-delay = "2000" data-words = '["Travel Fanatic", "Fitness Enthusiast", "Lifestyle Coach"]'></span></h1>
+                    <h3>altiora quaero</h3>
+
+                    <ul class = "social-links">
+                        <li>
+                            <a href = "https://web.facebook.com/rlescano16" target = "_blank" class = "flex">
+                                <i class = "fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "https://twitter.com/rnmrmplscno" target = "_blank" class = "flex">
+                                <i class = "fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "https://www.instagram.com/renmarmapalescano/" target = "_blank" class = "flex">
+                                <i class = "fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- end of header -->
+
+
+
+
+        <!-- main content -->
+        <main>
+
+            <!-- Intro section -->
+            <section id = "about" class = "about py-7">
+                <div class = "container">
+                    <div class = "about-content grid">
+                        <div class = "about-left">
+                            <img src = "images/profile.png" alt = "Profile">
+                        </div>
+                        <div class = "about-right">
+                            <div class = "title">
+                                <h2>Renmar Lescano</h2>
+                            </div>
+                            <p class = "lead">A 4th Year, Bachelor of Science in Computer Science student from the University of the Philippines Visayas.</p>
+                            <p class = "lead">I am 21 years old and currently residing in Silay City, Negros Occidental, Philippines.</p>
+                            <a href = "#work" class = "btn-down">
+                                <i class = "fas fa-chevron-down"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end of Intro section -->
+
+
+            <!-- About Me section -->
+            <section id = "work" class = "vh-100 flex py-7">
+                <div class = "container">
+                    <div class = "work-content">
+                        <div class = "title">
+                            <h2>About Me</h2>
+                        </div>
+                        <ul class = "work-top grid">
+                            <li class = "lead"><i class = "fas fa-dot-circle"></i> I am a Computer Science Major who specializes in C++ and Python development.</li>
+                            <li class = "lead"><i class = "fas fa-dot-circle"></i> I also do freelancing work in areas such as full stack software development and video production. </li>
+                            <li class = "lead"><i class = "fas fa-dot-circle"></i> I am also a fitness fanatic who belongs to a network of people who share their expertise, support, and motivation for living a healthy lifestyle.</li>
+                            <li class = "lead"><i class = "fas fa-dot-circle"></i> When I'm not doing academic tasks, I enjoy traveling to domestic and international tourist destinations. Check out my travel photos below! </li>
+                        </ul>
+
+                        <a href = "#portfolio" class = "btn-down btn-down-white">
+                            <i class = "fas fa-chevron-down"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- end of About Me section -->
+
+
+            <!-- Travel Photos section -->
+            <section id = "portfolio" class = "vh-100 py-7">
+                <div class = "container">
+                    <div class = "portfolio-content">
+                        <div class = "title">
+                            <h2>Travel photos</h2>
+                            <a href = "#contact" class = "btn-down">
+                                <i class = "fas fa-chevron-down"></i>
+                            </a>
+                        </div>
+
+                        <div class = "portfolio-grid grid">
+                            <div><img src = "images/11.jpg"></div>
+                            <div><img src = "images/3.jpg"></div>
+                            <div><img src = "images/6.jpg"></div>
+                            <div><img src = "images/5.jpg"></div>
+                            <div><img src = "images/4.jpg"></div>
+                            <div><img src = "images/8.1.png"></div>
+                            <div><img src = "images/9.jpg"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end of Travel Photos section -->
+
+
+            <!-- Comment section -->
+            <section id = "contact" class = "py-7">
+                <div class = "container">
+                    <div class = "contact-content flex">
+                        <div class = "contact-left">
+                            <div class="title">
+                                <h2>Any thoughts?</h2>
+                            </div>
+                            <p class = "lead">Please let me know if there is anything you need to know! It may be trip suggestions, fitness ideas, or even lifestyle coaching. I'd be thrilled to help you.</p>
+                            
+                            <form action="connect.php" method="post" onsubmit="submitBtn()">
+                                <h1>Name: (Optional)</h1>
+                                <input type = "text" class = "form-control" id="fullName" name="fullName" placeholder="Your name here ...">
+                                <h1>Comments/Questions:</h1>
+                                <input class = "form-control" id="comments" name="comments" placeholder="Feel free to type anything ...">
+                                <button class = "btn-submit btn" value = "submit" onclick="submitBtn()">Submit</button>
+                            </form>
+                        </div>
+
+                        <div class = "contact-right">
+                            <img src = "images/10.jpg" alt = "contact image">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end of Comment section -->
+
+
+            <!-- Instagram section -->
+            <section id = "insta" class = "py-7">
+                <div class = "container">
+                    <div class = "insta-content">
+                        <div class = "title">
+                            <h2>instagram</h2>
+                            <a href = "#footer" class = "btn-down btn-down-white">
+                                <i class = "fas fa-chevron-down"></i>
+                            </a>
+                        </div>
+                        <div class = "insta-grid grid">
+                            <div><img src = "images/12.png"></div>
+                            <div><img src = "images/13.png"></div>
+                            <div><img src = "images/14.png"></div>
+                            <div><img src = "images/15.png"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end of Instagram section -->
+
+        </main>
+        <!-- end of main content -->
+
+
+
+
+        <!-- footer -->
+        <footer id = "footer" class = "py-7">
+            <div class = "container">
+                <div class = "footer-content">
+                    <div>
+                        <h3>RENMAR LESCANO</h3>
+                        <div><img src = "images/profile.png"></div>
+                    </div>
+
+                    <div>
+                        <h3>Links</h3>
+                        <ul class = "flex">
+                            <li><a href = "https://web.facebook.com/rlescano16">Facebook</a></li>
+                            <li><a href = "https://twitter.com/rnmrmplscno">Twitter</a></li>
+                            <li><a href = "https://www.instagram.com/renmarmapalescano//">Instagram</a></li>
+                        </ul>
+                        <label>Contact Me: </label>
+                        <label>(+63)945 517 9798 / rmlescano2@up.edu.ph</label>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end of footer -->
+
+
+        <!-- JavaScript link -->
+        <script src = "javascript/index.js"></script>
+
+    </body>
+</html>
